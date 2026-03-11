@@ -17,7 +17,7 @@ This is exactly how real applications handle credentials for databases, APIs, an
 
 ### Step 1: Set Up Your Repository
 
-Fork this repository and make sure it has the workflow files in `.github/workflows/`.
+Fork this repository to your local github account.
 
 ### Step 2: Get the Key
 
@@ -34,13 +34,9 @@ Dr. Obeid will briefly display a **Personal Access Token (PAT)** on screen. Copy
 
 ### Step 4: Push and Run
 
-```bash
-git add .
-git commit -m "Add treasure key"
-git push
-```
+In GitHub, go to Actions and manually trigger the "Fetch the Treasure" action.
 
-Then go to the **Actions** tab and watch the magic happen.
+Watch the magic happen and see if you can see the secret message.
 
 ---
 
@@ -104,6 +100,20 @@ Without the key? Access denied.
 ## Submission
 
 Screenshot your successful workflow run showing the secret message. Submit via Canvas->Assignments->Fetch Treasure Assignment.
+
+---
+
+## Next Challenge
+Write a short Python program that uses the `TREASURE_KEY` secret to access the secret message (instead
+of having the `fetch-treasure.yml` workflow do all the work.) 
+
+You should be able to run this python command locally to see the message.
+
+You should also create a workflow file so that the code can access the secret message in GitHub and successfully read the message.
+
+Reminder, the secret message is located at:
+
+`https://raw.githubusercontent.com/iyad-obeid/secret-message/main/treasure.txt`
 
 ---
 
